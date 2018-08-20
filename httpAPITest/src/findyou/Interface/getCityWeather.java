@@ -27,12 +27,12 @@ public class getCityWeather {
 			out = new DataOutputStream(connection.getOutputStream());
 			out.flush();
 			out.close();
-			BufferedReader reader = new BufferedReader(new InputStreamReader(
+			/*BufferedReader reader = new BufferedReader(new InputStreamReader(
 					connection.getInputStream()));
 			while ((line = reader.readLine()) != null) {
 				httpResults = httpResults + line.toString();
 			}
-			reader.close();
+			reader.close();*/
 			// 断开连接
 			connection.disconnect();
 		} catch (Exception e) {
